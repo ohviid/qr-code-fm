@@ -20,45 +20,34 @@ body {
     background-color: #D5E1EF;
 }
 
+body, html {
+    display: grid;
+    height: 100%;
+}
+
 h1 {
     color: #1F314F;
-    text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
 
-    font-family: Outfit;
     font-size: 1.375rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 120%;
 
-    align-self: stretch;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline: 1rem;
-
-    /* border: red solid 2px; */
 } 
 
 p {
-    color: var(--color-slate-500, #68778D);
-    text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
-
-    /* text-preset-2 */
-    font-family: Outfit;
+    color: #68778D;
+    
     font-size: 0.9375rem;
-    font-style: normal;
-    font-weight: 400;
+    font-weight: 400;  
     line-height: 140%; 
-    letter-spacing: 0.0125rem;
 
-    align-self: stretch;
+    letter-spacing: 0.0125rem;
 
     margin-inline: 1rem;
     margin-block-start: 1rem;
-    /* margin-block-end: 2.5rem; */
-
-    /* border: red solid 2px; */
 }
 
 img {
@@ -68,16 +57,15 @@ img {
     margin-inline: 1rem;
     margin-block-start: 1rem;
     margin-block-end: 1.5rem;
-
-
-    /* border: red solid 5px; */
 }
 
-.textblock {
-    /* margin-block-start: 1rem; */
-    
+.textblock { 
+    align-self: stretch;
+    font-style: normal;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Outfit;
     margin-inline: 1rem;
-    /* border: red solid 2px; */
     padding-block-end: 2.5rem;
 }
 
@@ -85,12 +73,7 @@ img {
 .card {
     border-radius: 0.625rem;
     background-color: #FFF;
-    /* border: red solid 5px; */
-}
-
-.wrapper {
-    margin-inline: auto;
-    margin-block: auto  ;
+    margin: auto;
     max-width: 20rem;
 }
 
