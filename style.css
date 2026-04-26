@@ -4,7 +4,7 @@
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/outfit-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/outfit-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* outfit-700 - latin */
 @font-face {
@@ -12,7 +12,7 @@
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 700;
-  src: url('fonts/outfit-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/outfit-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
     
        
@@ -23,6 +23,24 @@ body {
 body, html {
     display: grid;
     height: 100%;
+}
+
+img {
+    border-radius: 0.625rem;
+    max-inline-size: 18rem;
+    max-block-size: 100%;
+    margin-inline: 1rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1.5rem;
+}
+
+.textblock { 
+    font-style: normal;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Outfit' sans-serif;
+    margin-inline: 1rem;
+    padding-block-end: 2.5rem;
 }
 
 h1 {
@@ -50,25 +68,6 @@ p {
     margin-block-start: 1rem;
 }
 
-img {
-    border-radius: 0.625rem;
-    max-inline-size: 18rem;
-    max-block-size: 100%;
-    margin-inline: 1rem;
-    margin-block-start: 1rem;
-    margin-block-end: 1.5rem;
-}
-
-.textblock { 
-    align-self: stretch;
-    font-style: normal;
-    text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: Outfit;
-    margin-inline: 1rem;
-    padding-block-end: 2.5rem;
-}
-
 
 .card {
     border-radius: 0.625rem;
@@ -78,5 +77,11 @@ img {
 }
 
 
-.attribution { font-size: 0.6875rem; text-align: center; }
+.attribution { 
+    font-size: 0.6875rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    inline-size: 100%;
+ }
 .attribution a { color: hsl(228, 45%, 44%); }
